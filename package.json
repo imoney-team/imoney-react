@@ -1,0 +1,29 @@
+{
+  "name": "imoney-react",
+  "version": "1.0.0",
+  "description": "iMoney UI for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stormtea123",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stormtea123/imoney-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/stormtea123/imoney-react/issues"
+  },
+  "homepage": "https://github.com/stormtea123/imoney-react#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
