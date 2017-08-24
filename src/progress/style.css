@@ -1,0 +1,6 @@
+/*stroke-dasharray:1000;*/
+.ui-progress circle { stroke-dashoffset: 0;  stroke: #fff;}
+.ui-progress circle.transition { transition: stroke-dashoffset 1s linear; }
+.ui-progress .ui-progress-bar { stroke-dasharray:439.823; stroke-dashoffset: 439.823;  stroke: #f57425; }
+.ui-progress-text { fill:#fff; text-anchor:middle; }
+.auth-countDown-info { margin:218px 0 0 168px; line-height:46px; font-size:32px; color:#fff; }
