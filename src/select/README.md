@@ -25,20 +25,10 @@ class App extends Component {
         data = [{label:"none...",value:""}].concat(data)
         const CouponOptions = {
             data:data,
-            name:"cash-config-coupon",
+            name:"custom-class",
             placeholder:"select...",
             callback: function (index) {
-                const value = coupons[index].value;
-                if (value.length > 0) {
-                    self.setState({
-                        couponValue: coupons[index].money,
-                        couponId: value
-                    })
-                } else {
-                    self.setState({
-                        couponValue: 0
-                    })
-                }
+                console.log(index)
             }
         }
         this.setState({
