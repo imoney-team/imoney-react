@@ -10,8 +10,8 @@ IE9+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react/src/switch"
-import "imoney-react/src/switch/style.css"
+import Switch from "imoney-react-ui/src/switch"
+import "imoney-react-ui/src/switch/style.css"
 ```
 
     let App = React.createClass({
