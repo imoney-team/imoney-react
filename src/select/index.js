@@ -21,7 +21,8 @@ class Select extends Component {
         document.body.classList.add("ui-noScroll");
         this.setState({ options:msg })
     }
-    removeSelect () {
+    removeSelect (e) {
+        e.preventDefault();
         this.state.options.callback(this.state.options.selectIndex);
         this.setState({ options:null });
         document.body.classList.remove("ui-noScroll");
@@ -87,11 +88,12 @@ export default class extends Component {
         let options = this.props.options;
         show(options.data, {
             value:self.state.value?self.state.value:options.value?options.value:"",
-            selectIndex:0,
+            selectIndex:self.state.selectIndex?self.state.selectIndex:0,
             callback: (index)=>{
                 self.setState({
                     label:options.data[index].label||"",
-                    value:options.data[index].value||""
+                    value:options.data[index].value||"",
+                    selectIndex:index
                 })
                 options.callback&&options.callback(index)
             }
