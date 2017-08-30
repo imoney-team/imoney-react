@@ -1,4 +1,4 @@
-# imoney-react
+# imoney-react-ui
 
 ## Usage
 
