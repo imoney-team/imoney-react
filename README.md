@@ -1,9 +1,5 @@
 # imoney-react
 
-## Browser support
-
-IE9+
-
 ## Usage
 
 ```js
@@ -40,3 +36,7 @@ ReactDOM.render(
 - [x] select
 - [x] switch
 - [ ] countDown
+
+## Browser support
+
+IE9+
