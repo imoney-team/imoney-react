@@ -31,3 +31,12 @@ ReactDOM.render(
     document.getElementById('app')
 );
 ```
+
+## Components
+
+- [x] dialog
+- [x] gallery
+- [x] progress-countDown
+- [x] select
+- [x] switch
+- [ ] countDown
