@@ -35,7 +35,12 @@ ReactDOM.render(
 - [x] progress-countDown
 - [x] select
 - [x] switch
+- [x] bridge
+- [ ] dropDown
+- [x] countUp
 - [ ] countDown
+- [ ] datePicker
+- [ ] pagination
 
 ## Browser support
 
