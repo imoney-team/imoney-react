@@ -32,6 +32,7 @@ ReactDOM.render(
 
 - [x] dialog
 - [x] gallery
+- [x] progress
 - [x] progress-countDown
 - [x] select
 - [x] switch
