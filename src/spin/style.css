@@ -1,0 +1,29 @@
+.ui-switch { position:relative; z-index:1; display:inline-block; width:42px; height:20px; border-radius:11px; border:solid 1px #ccc; background:rgba(0,0,0,0.25); cursor:pointer; vertical-align:middle;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ui-switch:before { position:absolute; left:1px; top:1px; width:18px; height:18px; border-radius:9px; background:#fff; cursor:pointer; content:""; }
+.ui-switch.checked { border-color:#108ee9; background:#108ee9; }
+.ui-switch.checked:before { left:100%; margin-left:-19px; }
+.ui-switch:active:before {
+    width: 24px;
+}
+.ui-switch.checked:active:before {
+    margin-left: -25px;
+}
+.ui-switch.disable {
+    cursor:default;
+}
+.ui-switch.disable:before {
+    cursor:default;
+}
+.ui-switch.disable:active:before {
+    width: 18px;
+}
+.ui-switch.disable.checked:active:before {
+    margin-left:-19px;
+}

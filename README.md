@@ -32,6 +32,7 @@ ReactDOM.render(
 
 - [x] dialog
 - [x] gallery
+- [x] wait
 - [x] progress
 - [x] progress-countDown
 - [x] select
@@ -42,6 +43,8 @@ ReactDOM.render(
 - [ ] countDown
 - [ ] datePicker
 - [ ] pagination
+- [ ] table
+- [ ] clipboard
 
 ## Browser support
 

@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/imoney-team/imoney-react#readme",
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   }

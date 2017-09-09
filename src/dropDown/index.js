@@ -1,16 +1,4 @@
 import React, { Component, Children, cloneElement } from 'react'
-import classnames from 'classnames'
-import PropTypes from './utils/proptypes'
-import Transition from './Transition'
-import Button from './Button'
-import ButtonGroup from './ButtonGroup'
-import PureRender from './mixins/PureRender'
-import ClickAway from './higherOrders/ClickAway'
-import { compose } from './utils/compose'
-import { objectAssign } from './utils/objects'
-
-import _styles from './styles/_dropdown.scss'
-
 class Dropdown extends Component {
   constructor (props) {
     super(props)
