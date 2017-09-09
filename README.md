@@ -46,7 +46,7 @@ ReactDOM.render(
 - [ ] table
 - [x] clipboard
 
-## demo
+## Demo
 http://imoney.w3cmm.com/demo.html
 
 ## Browser support
