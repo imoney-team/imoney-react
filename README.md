@@ -44,7 +44,7 @@ ReactDOM.render(
 - [ ] datePicker
 - [ ] pagination
 - [ ] table
-- [ ] clipboard
+- [x] clipboard
 
 ## Browser support
 
