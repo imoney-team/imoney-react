@@ -46,6 +46,9 @@ ReactDOM.render(
 - [ ] table
 - [x] clipboard
 
+## demo
+http://imoney.w3cmm.com/demo.html
+
 ## Browser support
 
 IE9+
