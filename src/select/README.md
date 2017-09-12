@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/select"
+import Select from "imoney-react-ui/src/select"
 import "imoney-react-ui/src/select/style.css"
 ```
 

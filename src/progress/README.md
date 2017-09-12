@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/progress"
+import Progress from "imoney-react-ui/src/progress"
 import "imoney-react-ui/src/progress/style.css"
 ```
 ```js
