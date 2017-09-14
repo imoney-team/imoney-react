@@ -8,6 +8,6 @@
 .ui-dialog-dismissible .ui-dialog-close { display:none; }
 .ui-dialog-hd { padding:52px 68px; font-size:45px; color:#000;}
 .ui-dialog-bd { padding:43px; text-align:center; color:#666; }
-.ui-dialog-ft { display:flex; height:90px; line-height:90px; text-align:center; background:#f5f5f5; border-radius:0 0 14px 14px; color:#5c5c5c; }
-.ui-dialog-ft-item { flex:1; }
+.ui-dialog-ft { display:flex; text-align:center; background:#f5f5f5; border-radius:0 0 14px 14px; color:#5c5c5c; }
+.ui-dialog-ft-item { flex:1; height:90px; line-height:90px;  }
 .ui-dialog-danger, .ui-dialog-error .ui-dialog-hd { }
