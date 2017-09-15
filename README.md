@@ -1,5 +1,7 @@
 # imoney-react-ui
 
+![image](https://raw.githubusercontent.com/imoney-team/imoney-react-ui/master/test/components.png)
+
 ## Usage
 
 ```js

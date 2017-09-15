@@ -34,7 +34,8 @@ class Select extends Component {
         this.setState({ options })
     }
     render () {
-        const options = this.state.options
+        const options = this.state.options;
+        const self = this;
         if (!options){
             return (null)
         }
@@ -48,9 +49,11 @@ class Select extends Component {
                         <ul className="ui-selectOptions-list">
                             {
                                 options.data.map((element, index, array) => {
-                                    return (
-                                        <li key={index} onClick={(e)=>{this.selectHandle(e,index)}} className={element.value==options.value?"select":""}>{element.label}</li>
-                                    )
+                                    if (element.disable) {
+                                        return (<li key={index} className="disable">{element.name}</li>)
+                                    } else {
+                                        return (<li key={index} onClick={(e)=>{this.selectHandle(e,index)}} className={element.value==options.value?"select":""}>{element.name}</li>)
+                                    }
                                 })
                             }
                         </ul>
@@ -60,9 +63,9 @@ class Select extends Component {
         )
     }
 }
-const div = document.createElement('div')
-document.body.appendChild(div)
-const container = ReactDOM.render(<Select />, div)
+const div = document.createElement('div');
+document.body.appendChild(div);
+const container = ReactDOM.render(<Select />, div);
 function create () {
 
     return (data, msg = {}) => {
@@ -71,7 +74,7 @@ function create () {
     }
 }
 
-let show = create()
+let show = create();
 
 export default class extends Component {
     constructor(props) {
@@ -91,10 +94,10 @@ export default class extends Component {
             selectIndex:self.state.selectIndex?self.state.selectIndex:0,
             callback: (index)=>{
                 self.setState({
-                    label:options.data[index].label||"",
+                    name:options.data[index].name||"",
                     value:options.data[index].value||"",
                     selectIndex:index
-                })
+                });
                 options.callback&&options.callback(index)
             }
         });
@@ -102,13 +105,14 @@ export default class extends Component {
     render() {
         let options = this.props.options;
         var className = ["ui-select"];
-        if (options.name){
-            className.push(options.name);
+        if (options.className){
+            className.push(options.className);
         }
-        let label = this.state.label?this.state.label:this.props.options.placeholder;
+        let name = this.state.name?this.state.name:this.props.options.placeholder;
         return (
             <div className={className.join(" ")} onClick={this.showSelect}>
-                <div className="ui-select-value">{label}</div>
+                <div className="ui-select-value">{name}</div>
+                <input name={options.name} type="hidden" defaultValue={this.state.value||""}/>
             </div>
         );
 
