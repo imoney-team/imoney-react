@@ -46,7 +46,7 @@ ReactDOM.render(
 - [ ] datePicker
 - [ ] pagination
 - [ ] table
-- [ ] tabs
+- [x] tab
 - [ ] list
 - [x] clipboard
 
