@@ -1,6 +1,6 @@
 # imoney-react-ui
 
-![image](https://raw.githubusercontent.com/imoney-team/imoney-react-ui/master/test/components.png)
+<img src="https://raw.githubusercontent.com/imoney-team/imoney-react-ui/master/test/components.png" width="528">
 
 ## Usage
 
