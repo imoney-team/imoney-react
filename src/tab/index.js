@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import "./style.css";
+
+
 var start, delta, ishorizontal;
 export default class extends Component {
     constructor(props) {
@@ -70,7 +73,6 @@ export default class extends Component {
         let isValid = ((Number(duration) < 250 && Math.abs(delta.x) > width / 8) || Math.abs(delta.x) > width / 4);
         if (isValid) {
             this._navigate(delta.x < 0 ? 'next' : 'prev');
-            this.changeState(this.current)
             return;
         }
         if (Math.abs(delta.x) <= width / 4) {
@@ -80,7 +82,6 @@ export default class extends Component {
 
     _navigate(dir) {
         var self = this;
-        let width = this.state.size.width;
         if (dir === "next") {
             if (this.current >= this.length - 1) {
                 this.current = this.length - 1;
@@ -106,9 +107,8 @@ export default class extends Component {
                 this.props.options.onFirst && this.props.options.onFirst();
             }
         }
-        this.refs.body.style.webkitTransform = `translate3d(${-(this.current) * width}px, 0px, 0px)`
         //this.$items.removeClass("current").eq(this.current-1).addClass("current");
-        this.props.options.onChange && this.props.options.onChange(this.current);
+        this.changeState(this.current)
     }
 
     changeState(i) {
@@ -125,9 +125,10 @@ export default class extends Component {
         ).forEach((element, index, array) => {
             element.classList.remove("active");
         });
-        this.props.options.callback(i)
-    }
+        this.refs.body.style.webkitTransform = `translate3d(${-(i) * this.state.size.width}px, 0px, 0px)`
+        this.props.options.onChange && this.props.options.onChange(i);
 
+    }
     render() {
         let options = this.props.options || {data: []};
         let className = ["ui-tab"];
@@ -137,7 +138,7 @@ export default class extends Component {
         let data = options.data;
         let body = options.data.map((item, i) => {
             if (item.data.length == 0) {
-                return <div className="ui-tab-empty" key={i}>暂无</div>
+                return <div className="ui-tab-empty" key={i}>暂无相关数据</div>
             } else {
                 return <ul className="ui-tab-list" key={i}>
                     {item.data.map((child, j) =>

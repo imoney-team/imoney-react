@@ -1,9 +1,9 @@
 .ui-tab-hd { position:relative; }
 .ui-tab-hd-list { display:flex; height:78px; line-height:78px; background:#fff; font-size:25px; color:#000; }
-.ui-tab-hd-item { flex:1; text-align:center; }
+.ui-tab-hd-item { flex:1; text-align:center; width:10%; }
 .ui-tab-hd-item.active { color:#f57425; }
 .ui-tab-hd-line { position :absolute; bottom:0; width :0; height:2px; font-size:0; background:#fd6a10; overflow :hidden; transition:all 0.3s;}
-.ui-tab-bd { position:relative; display:flex; font-size:22px; }
+.ui-tab-bd { position:relative; display:flex; align-items:flex-start; }
 .ui-tab-list {  margin-top:15px; border-top:solid 1px #ebebeb; border-top:solid 1px #ebebeb; border-bottom:solid 1px #ebebeb; background:#fff;  }
 .ui-tab-list-item { display:flex; justify-content:space-between; height:77px; padding:0 30px; line-height:77px; border-bottom:solid 1px #ebebeb; }
 .ui-tab-list-item:last-child { border-bottom:0; }

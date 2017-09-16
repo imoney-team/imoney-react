@@ -33,6 +33,7 @@ ReactDOM.render(
 ## Components
 
 - [x] dialog
+- [x] notice
 - [x] gallery
 - [x] wait
 - [x] progress
@@ -54,5 +55,8 @@ ReactDOM.render(
 http://imoney.w3cmm.com/demo.html
 
 ## Browser support
-
-IE9+
+* IE 9+
+* Chrome 11+
+* Firefox 4+
+* Safari 5.1+
+* Opera 11.5+
