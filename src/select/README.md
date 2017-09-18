@@ -35,8 +35,14 @@ class App extends Component {
             CouponOptions
         });
     }
+    callbackSelect(index) {
+        console.log(index)
+    }
+    showSelect() {
+        console.log("select");
+    }
     render() {
-        return (<Select options={this.state.CouponOptions}/>);
+        return (<Select options={this.state.CouponOptions} showSelect={this.showSelect} callback={this.callbackSelect}/>);
 
     }
 };

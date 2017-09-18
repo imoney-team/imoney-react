@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import "./style.css";
 class Select extends Component {
     constructor (props) {
         super(props)
@@ -89,16 +90,17 @@ export default class extends Component {
     showSelect(e){
         let self = this;
         let options = this.props.options;
+        if (this.props.showSelect) this.props.showSelect();
         show(options.data, {
-            value:self.state.value?self.state.value:options.value?options.value:"",
-            selectIndex:self.state.selectIndex?self.state.selectIndex:0,
+            value:options.value?options.value:"",
+            selectIndex:options.selectIndex?options.selectIndex:0,
             callback: (index)=>{
-                self.setState({
-                    name:options.data[index].name||"",
-                    value:options.data[index].value||"",
-                    selectIndex:index
-                });
-                options.callback&&options.callback(index)
+                // self.setState({
+                //     name:options.name||"",
+                //     value:options.value||"",
+                //     selectIndex:selectIndex
+                // });
+                this.props.callback&&this.props.callback(index)
             }
         });
     }
@@ -108,11 +110,11 @@ export default class extends Component {
         if (options.className){
             className.push(options.className);
         }
-        let name = this.state.name?this.state.name:this.props.options.placeholder;
+        let name = options.name?options.name:options.placeholder;
         return (
             <div className={className.join(" ")} onClick={this.showSelect}>
                 <div className="ui-select-value">{name}</div>
-                <input name={options.name} type="hidden" defaultValue={this.state.value||""}/>
+                <input name={options.inputName} type="hidden" defaultValue={options.value||""}/>
             </div>
         );
 
