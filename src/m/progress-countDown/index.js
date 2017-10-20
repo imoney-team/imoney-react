@@ -6,23 +6,23 @@ class Progress{
         this.init();
     };
     init(){
-        var r = this.r;
-        var progress = document.getElementById("progress");
-        var circle = progress.querySelectorAll("circle ");
-        circle.forEach(function(element, index, array) {
+        let r = this.r;
+        let progress = document.getElementById("progress");
+        let circle = progress.querySelectorAll("circle");
+        [].forEach.call(circle, function(element, index, array){
             element.style.strokeDasharray = Math.PI * (r * 2);
             element.classList.add("transition");
         });
         this.run();
     }
     run(){
-        var callback = this.callback;
-        var time = this.time;
-        var progressBar = document.getElementById("progress-bar");
-        var progressText = document.getElementById("progress-text");
-        var count = 0;
-        var r = this.r;
-        var Timer = setInterval(()=>{
+        let callback = this.callback;
+        let time = this.time;
+        let progressBar = document.getElementById("progress-bar");
+        let progressText = document.getElementById("progress-text");
+        let count = 0;
+        let r = this.r;
+        let Timer = setInterval(()=>{
             count++;
             if (count>=time) {
                 clearInterval(Timer);
@@ -30,8 +30,8 @@ class Progress{
             } else {
                 progressBar.style.strokeDashoffset = ((time-count) / time) * Math.PI * (r * 2)
 
-                var minute = Math.floor((time-count)/60);
-                var second = ("0"+Math.floor((time-count)%60)).substr(-2);
+                let minute = Math.floor((time-count)/60);
+                let second = ("0"+Math.floor((time-count)%60)).substr(-2);
                 progressText.textContent=minute+":"+second;
             }
 

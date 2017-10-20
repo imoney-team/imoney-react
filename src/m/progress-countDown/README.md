@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/progress-countDown"
-import "imoney-react-ui/src/progress-countDown/style.css"
+import Switch from "imoney-react-ui/src/m/progress-countDown"
+import "imoney-react-ui/src/m/progress-countDown/style.css"
 ```
 
 ```html

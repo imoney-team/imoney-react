@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Select from "imoney-react-ui/src/select"
-import "imoney-react-ui/src/select/style.css"
+import Select from "imoney-react-ui/src/m/select"
+import "imoney-react-ui/src/m/select/style.css"
 ```
 
 ```js

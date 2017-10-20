@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/tab"
-import "imoney-react-ui/src/tab/style.css"
+import Switch from "imoney-react-ui/src/m/tab"
+import "imoney-react-ui/src/m/tab/style.css"
 ```
 
 ```js
