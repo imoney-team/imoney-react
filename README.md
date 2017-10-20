@@ -32,24 +32,39 @@ ReactDOM.render(
 
 ## Components
 
-- [x] dialog
-- [x] notice
-- [x] gallery
-- [ ] wait
-- [x] progress
-- [x] progress-countDown
-- [x] select
-- [x] switch
-- [x] bridge
-- [ ] dropDown
-- [x] countUp
-- [x] countDown
-- [ ] datePicker
-- [ ] pagination
-- [ ] table
-- [x] tab
-- [ ] list
-- [x] clipboard
+<table>
+	<tr>
+		<td>PC</td>
+		<td>mobile</td>
+		<td>all</td>
+	</tr>
+	<tr>
+		<td>
+        dialog ✔<br />
+        gallery ✔<br />
+        wait<br />
+        switch ✔<br />
+        dropDown<br />
+        datePicker<br />
+        pagination<br />
+        table<br />
+        list<br />
+        </td>
+		<td>
+        notice ✔<br />
+        select ✔<br />
+        progress-countDown ✔<br />
+        tab ✔<br />
+        bridge ✔<br />
+		</td>
+		<td>
+        progress ✔<br />
+        countUp ✔<br />
+        countDown ✔<br />
+        clipboard ✔<br />
+		</td>
+	</tr>
+</table>
 
 ## Demo
 http://imoney.w3cmm.com/demo.html
