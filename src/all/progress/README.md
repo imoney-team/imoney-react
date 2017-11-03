@@ -1,9 +1,8 @@
 ```js
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import Progress from "imoney-react-ui/src/progress"
-import "imoney-react-ui/src/progress/style.css"
+import Progress from "imoney-react-ui/src/all/progress"
+import "imoney-react-ui/src/all/progress/style.css"
 ```
 ```js
 Progress.start();

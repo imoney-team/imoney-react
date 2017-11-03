@@ -1,8 +1,7 @@
 ```js
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import CountUp, {startAnimation} from "imoney-react-ui/src/countUp";
+import CountUp, {startAnimation} from "imoney-react-ui/src/all/countUp";
 ```
 
 ```js

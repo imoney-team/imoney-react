@@ -8,8 +8,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/switch"
-import "imoney-react-ui/src/switch/style.css"
+import Switch from "imoney-react-ui/src/all/switch"
+import "imoney-react-ui/src/all/switch/style.css"
 ```
 ```js
 let App = React.createClass({
@@ -42,8 +42,8 @@ ReactDOM.render(
 		<td>
         dialog ✔<br />
         gallery ✔<br />
+        tab ✔<br />
         wait<br />
-        switch ✔<br />
         dropDown<br />
         datePicker<br />
         pagination<br />
@@ -58,6 +58,8 @@ ReactDOM.render(
         bridge ✔<br />
 		</td>
 		<td>
+        nav ✔<br />
+        switch ✔<br />
         progress ✔<br />
         countUp ✔<br />
         countDown ✔<br />

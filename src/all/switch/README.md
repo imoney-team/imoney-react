@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/switch"
-import "imoney-react-ui/src/swtich/style.css"
+import Switch from "imoney-react-ui/src/all/switch"
+import "imoney-react-ui/src/all/swtich/style.css"
 ```
 
 ```js

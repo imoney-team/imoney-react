@@ -1,8 +1,7 @@
 ```js
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import CountDown from "imoney-react-ui/src/countDown"
+import CountDown from "imoney-react-ui/src/all/countDown"
 ```
 
 ```js

@@ -4,8 +4,8 @@
 
 ## Usage
 ```js
-import Notice from 'imoney-react-ui/src/m/notice';
-import 'imoney-react-ui/src/m/notice/style.css';
+import Notice from 'imoney-react-ui/src/mobile/notice';
+import 'imoney-react-ui/src/mobile/notice/style.css';
 ```
 
 ```js

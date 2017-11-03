@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Gallery from "imoney-react-ui/src/gallery"
-import "imoney-react-ui/src/gallery/style.css"
+import Gallery from "imoney-react-ui/src/pc/gallery"
+import "imoney-react-ui/src/pc/gallery/style.css"
 ```
 
 
