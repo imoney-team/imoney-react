@@ -58,6 +58,7 @@ ReactDOM.render(
         bridge ✔<br />
 		</td>
 		<td>
+        buttonGroup ✔<br />
         nav ✔<br />
         switch ✔<br />
         progress ✔<br />

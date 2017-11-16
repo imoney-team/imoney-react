@@ -1,11 +1,11 @@
 import React, {Component, Element} from 'react';
 import Count from './countDown.js';
 
-
 export default class CountDown extends Component {
     constructor(props) {
         super(props)
     }
+
     componentDidMount() {
         new Count(this.refs.body, this.props.options)
     }

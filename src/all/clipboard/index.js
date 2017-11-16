@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types'; // ES6
 
-import select from '../lib/select';
+import select from '../../lib/select';
 
 /**
  * Inner class which performs selection from either `text` or `target`

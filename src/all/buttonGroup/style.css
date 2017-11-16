@@ -1,0 +1,9 @@
+.ui-buttonGroup { display:inline-block; }
+.ui-buttonGroup-bd { display:flex; padding-left:1px; }
+.ui-buttonGroup-item { display:inline-block; flex:1; margin-left:-1px; padding:0 16px; height:26px; line-height:26px; border:solid 1px #d9d9d9; font-size:12px; font-style:normal; cursor:pointer; }
+.ui-buttonGroup-item:hover { color:#108ee9; }
+.ui-buttonGroup-item.active { position:relative; border-color:#108ee9; color:#108ee9; }
+.ui-buttonGroup-item.disabled { cursor:not-allowed; background:#f7f7f7; color:#d9d9d9; }
+.ui-buttonGroup-item.disabled:hover { color:#d9d9d9; }
+.ui-buttonGroup-item:first-child { border-radius:4px 0 0 4px; }
+.ui-buttonGroup-item:last-child { border-radius:0 4px 4px 0; }
