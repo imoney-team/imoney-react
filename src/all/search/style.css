@@ -1,0 +1,6 @@
+.ui-search-form { display:flex; padding-bottom:10px; }
+.ui-search-input { min-width:230px; height:34px; padding:0 5px; border:solid 1px #d3d8df; box-sizing:border-box; vertical-align:top; border-radius:4px; transition: all .2s ease-in-out }
+.ui-search-input:focus { border-color:#57a3f3; box-shadow:0 0 0 2px rgba(45,140,240,.2); outline:0; }
+.ui-search-bd { position:relative; }
+.ui-search-delete { position:absolute; right:10px; top:9px; width:16px; height:16px; line-height:16px; text-align:center; color:#fff; background:#e8f5fe; background-size:10px auto; border-radius:8px; cursor:pointer; }
+.ui-search-delete:hover { background:#56baf3; }

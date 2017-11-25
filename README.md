@@ -65,6 +65,7 @@ ReactDOM.render(
         countUp ✔<br />
         countDown ✔<br />
         clipboard ✔<br />
+        search ✔<br />
 		</td>
 	</tr>
 </table>
