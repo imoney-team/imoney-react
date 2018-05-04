@@ -34,7 +34,7 @@ ReactDOM.render(
 
 <table>
 	<tr>
-		<td>PC</td>
+		<td>desktop</td>
 		<td>mobile</td>
 		<td>all</td>
 	</tr>
