@@ -71,7 +71,7 @@ ReactDOM.render(
 </table>
 
 ## Demo
-<del>http://imoney.w3cmm.com/demo.html</del>
+<del>***/demo.html</del>
 
 ## Browser support
 * IE 9+
