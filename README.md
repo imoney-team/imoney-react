@@ -1,6 +1,6 @@
-# imoney-react-ui
+# react-ui
 
-<img src="https://raw.githubusercontent.com/imoney-team/imoney-react-ui/master/test/components.png" width="528">
+<img src="https://raw.githubusercontent.com/leibnizli/react-ui/master/test/components.png" width="528">
 
 ## Usage
 
@@ -8,8 +8,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Switch from "imoney-react-ui/src/all/switch"
-import "imoney-react-ui/src/all/switch/style.css"
+import Switch from "react-ui/src/all/switch"
+import "react-ui/src/all/switch/style.css"
 ```
 ```js
 let App = React.createClass({
